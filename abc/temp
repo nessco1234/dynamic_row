@@ -1,0 +1,1352 @@
+
+                                    <!-- 2nd -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input78"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input79"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input80" name="input80">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input81" name="input81">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input82" name="input82">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input83"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input84" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input85" name="input85">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input86" name="input86">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input87" name="input87">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input88" name="input88">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input89" name="input89">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input90" name="input90">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input91" name="input91">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input92" name="input92">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input93" name="input93">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input94" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input95" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input96" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input97" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input98" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input99"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input100" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input101" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input102" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input103" name="input103">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input104" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input105" name="input105">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input106" name="input106">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input107" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input108" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input109" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 3rd -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input110"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input111"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input112" name="input112">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input113" name="input113">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input114" name="input114">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input115"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input116" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input117" name="input117">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input118" name="input118">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input119" name="input119">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input120" name="input120">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input121" name="input121">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input122" name="input122">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input123" name="input123">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input124" name="input124">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input125" name="input125">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input126" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input127" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input128" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input129" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input130" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input131"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input132" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input133" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input134" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input135" name="input135">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input136" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input137" name="input137">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input138" name="input138">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input139" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input140" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input141" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 4th -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input142"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input143"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input144" name="input144">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input145" name="input145">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input146" name="input146">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input147"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input148" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input149" name="input149">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input150" name="input150">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input151" name="input151">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input152" name="input152">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input153" name="input153">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input154" name="input154">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input155" name="input155">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input156" name="input156">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input157" name="input157">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input158" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input159" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input160" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input161" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input162" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input163"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input164" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input165" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input166" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input167" name="input167">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input168" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input169" name="input169">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input170" name="input170">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input171" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input172" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input173" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 5th -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input174"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input175"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input176" name="input176">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input177" name="input177">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input178" name="input178">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input179"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input180" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input181" name="input181">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input182" name="input182">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input183" name="input183">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input184" name="input184">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input185" name="input185">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input186" name="input186">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input187" name="input187">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input188" name="input188">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input189" name="input189">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input190" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input191" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input192" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input193" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input194" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input195"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input196" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input197" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input198" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input199" name="input199">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input200" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input201" name="input201">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input202" name="input202">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input203" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input204" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input205" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 6th -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input206"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input207"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input208" name="input208">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input209" name="input209">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input210" name="input210">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input211"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input212" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input213" name="input213">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input214" name="input214">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input215" name="input215">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input216" name="input216">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input217" name="input217">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input218" name="input218">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input219" name="input219">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input220" name="input220">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input221" name="input221">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input222" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input223" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input224" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input225" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input226" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input227"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input228" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input229" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input230" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input231" name="input231">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input232" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input233" name="input233">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input234" name="input234">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input235" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input236" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input237" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 7th -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input238"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input239"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input240" name="input240">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input241" name="input241">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input242" name="input242">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input243"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input244" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input245" name="input245">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input246" name="input246">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input247" name="input247">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input248" name="input248">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input249" name="input249">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input250" name="input250">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input251" name="input251">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input252" name="input252">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input253" name="input253">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input254" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input255" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input256" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input257" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input258" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input259"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input260" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input261" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input262" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input263" name="input263">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input264" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input265" name="input265">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input266" name="input266">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input267" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input268" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input269" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- 8th -->
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input270"
+                                                placeholder="ENTER ORDER#" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input271"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="input272" name="input272">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="input273" name="input273">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="input274" name="input274">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input275"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input276" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="input277" name="input277">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="input278" name="input278">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="input279" name="input279">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="input280" name="input280">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="input281" name="input281">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="input282" name="input282">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="input283" name="input283">
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="input284" name="input284">
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>  
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="input285" name="input285">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input286" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input287" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input288" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input289" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input290" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="input291"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input292" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input293" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input294" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="input295" name="input295">
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input296" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="input297" name="input297">
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="input298" name="input298">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input299" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input300" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="input301" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="remove_tr(this)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>

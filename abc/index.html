@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var subjectObject = {
+  "Paper Cup Machine": {
+    "NS-1900 (90 Speed)": ["Links", "Images", "Tables", "Lists"],
+    "NS-B2200 (22OZ Machine)H: 180MM, RB:93, Top:120 MM": ["Borders", "Margins", "Backgrounds", "Float"],
+    "NS-200 (120 Speed Domestic/100 Speed Export)": ["Variables", "Operators", "Functions", "Conditions"],
+    "NS-C250 (120 Speed Domestic/100 Speed Export)": ["Variables", "Operators", "Functions", "Conditions"],
+    "NS-200 - Updated Model(110 Speed)": ["Variables", "Operators", "Functions", "Conditions"],    
+    "140 Speed": ["Variables", "Operators", "Functions", "Conditions"],    
+    "160 Speed": ["Variables", "Operators", "Functions", "Conditions"],    
+    "Automatic Paper Cup Packing Machine": ["Variables", "Operators", "Functions", "Conditions"],    
+    "NS-2100": ["Variables", "Operators", "Functions", "Conditions"],    
+    "NS-G18": ["Variables", "Operators", "Functions", "Conditions"],    
+    "H-Series": ["Variables", "Operators", "Functions", "Conditions"],   
+    "NS-1800": ["Variables", "Operators", "Functions", "Conditions"],    
+    "OP-150": ["Variables", "Operators", "Functions", "Conditions"]    
+
+  },
+  "Die Cutting Machine ": {
+    "Wooden Roll Die Cutting Machine 970": ["Variables", "Strings", "Arrays"],
+    "Wooden Roll Die Cutting Machine With Embossing 970": ["SELECT", "UPDATE", "DELETE"],
+    "Wooden Roll Die Cutting Machine 1200": ["Variables", "Strings", "Arrays"],
+    "Metal Die Cutting Machine(850 & 920)": ["SELECT", "UPDATE", "DELETE"],
+    "Metal Die Cutting Machine(920)": ["Variables", "Strings", "Arrays"],
+    "Metal Die Cutting Machine With Printing": ["SELECT", "UPDATE", "DELETE"],
+    "Paper Fan/Blank Stripping Machine": ["Variables", "Strings", "Arrays"]
+  },  
+  "Flexo Printing Machine ": {
+    "Flexo Printing Machine(Verticl 950 Model) 4 Colour": ["Variables", "Strings", "Arrays"],
+    "Flexo Printing Machine(Verticl 1200 Model) 4 Colour": ["SELECT", "UPDATE", "DELETE"],
+    "Horizontal Flexo Printing Machine": ["Variables", "Strings", "Arrays"],
+    "Horizontal FPM 1200 6 Colour": ["SELECT", "UPDATE", "DELETE"],
+    "Horizontal FPM 1200 4 Colour": ["Variables", "Strings", "Arrays"],
+    "Horizontal FPM 950 6 Colour": ["SELECT", "UPDATE", "DELETE"],
+    "Horizontal FPM 950 4 Colour": ["SELECT", "UPDATE", "DELETE"],
+    "Horizontal FPM 1200 6 Colour With Servo Motor": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Slitting Machine": {
+    "Paper Slitting Machine": ["Variables", "Strings", "Arrays"],
+    "High Speed Paper Slitting Machine": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Coating Machine ": {
+    "PE Coating Machine": ["Variables", "Strings", "Arrays"],
+    "PLA Coating/ High Speed PE Coating Machine": ["SELECT", "UPDATE", "DELETE"],
+    "BIO Coating": ["Variables", "Strings", "Arrays"],
+  },
+  "Paper Bowl Machine ": {
+    "Paper Bowl Container Machine Paper Bowl/ Soup/ IceCream Machine 75": ["Variables", "Strings", "Arrays"],
+    "Paper Doner Box Machine": ["SELECT", "UPDATE", "DELETE"],
+    "High Speed Paper Bowl Container Machine Paper Bowl/ Soup/ IceCream Machine 90": ["Variables", "Strings", "Arrays"],
+    "Paper Doner Box Machine 90": ["SELECT", "UPDATE", "DELETE"],
+    "Paper Bowl Container Machine Paper Bowl/ Soup/ IceCream Machine 75 Type-2": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Salad Bowl Machine ": {
+    "Salad Bowl Machine Upto 150 DIA (40 Speed) Limitation: Max Height 115, TD: 100-150, Bottom : 80-120": ["Variables", "Strings", "Arrays"],
+    "High Speed Salad Bowl Machine Upto 150 DIA (75 Speed) Limitation: Max Height 110, TD:150, Bottom : 130": ["SELECT", "UPDATE", "DELETE"],
+    "High Speed Salad Bowl Machine Upto 150 DIA (75 Speed) Limitation: Max Height 110, TD:150, Bottom : 130": ["SELECT", "UPDATE", "DELETE"]
+
+  },
+  "Bucket Machine ": {
+    "Pop Corn/ Chicken Tub Bottom:175, Height:210, Top: ": ["Variables", "Strings", "Arrays"],
+    "Salad Tub Machine For Big Sizes": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Lid Machine ": {
+    "Paper Lid Machine(Three Layer) For": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Lid Packing Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Ripple/Double Wall Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Folder Gluer Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Corrugation Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Handle Cup Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Bag Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Bag Printing Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Straw Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Cutlery Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+   "Aluminium Foil Container Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Paper Plate Making Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Carton Erecting Machine/Hamburger Box Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Carton Erecting Machine/Hamburger Box Machine Two Station ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+   "Lunch Box Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Hidden Tea Cup Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  },
+  "Muffin Cup Machine ": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  }                                     
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>   
+<body>
+
+<h1>Cascading Dropdown Example</h1>
+
+<form name="form1" id="form1" action="/action_page.php">
+Subjects: <select name="subject" id="subject">
+    <option value="" selected="selected">Select subject</option>
+  </select>
+  <br><br>
+Topics: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select subject first</option>
+  </select>
+  <br><br>
+Chapters: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select topic first</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">  
+</form>
+
+</body>
+</html>

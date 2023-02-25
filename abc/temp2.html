@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+</head>
+<body>
+  <h1>Dynamic Rows</h1>
+  <div class="col-md-4 mb-3">
+              <label for="exampleFormControlSelect5">TRANSPORT FROM</label>
+              <select class="form-control" id="input33" name="input33">
+                                <option>PRODUCTION</option>
+                                <option>REPAIR AND MAINTAINANCE</option>
+                                <option>HELPER</option>
+                            </select>
+            </div>
+             <div class="col-md-4 mb-3">
+              <label>TRANSPORT TYPE</label>
+              <input type="text" class="form-control inp mb-3" id="input26"
+                                placeholder="ENTER TRANSPORT TYPE" autocomplete="off">
+            </div>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Serial no</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="row1">
+        <td>1</td>
+        <td><input type="text" id="name1"></td>
+        <td><input type="email" id="email1"></td>
+        <td><input type="tel" id="phone1"></td> 
+        <td><input type="text" id="fname1"></td>
+        <td><input type="email" id="femail1"></td>
+        <td><input type="tel" id="fphone1"></td>
+        <td><button onclick="deleteRow(1)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button onclick="addRow()">Add Row</button>
+  <button onclick="saveData()">Save Data</button>
+
+  <script>
+    var numRows = 1;
+    function addRow() {
+      numRows++;
+      var table = document.getElementById("myTable");
+      var row = table.insertRow(-1);
+      row.id = "row" + numRows;
+      row.insertCell(0).innerHTML = numRows;
+      row.insertCell(1).innerHTML = "<input type='text' id='name" + numRows + "'>";
+      row.insertCell(2).innerHTML = "<input type='text' id='email" + numRows + "'>";
+      row.insertCell(3).innerHTML = "<input type='text' id='phone" + numRows + "'>";
+      row.insertCell(4).innerHTML = "<input type='text' id='fname" + numRows + "'>";
+      row.insertCell(5).innerHTML = "<input type='text' id='femail" + numRows + "'>";
+      row.insertCell(6).innerHTML = "<input type='text' id='fphone" + numRows + "'>";
+      row.insertCell(7).innerHTML = "<button onclick='deleteRow(" + numRows + ")'>Delete</button>";
+    }
+
+    function deleteRow(rowNum) {
+      var table = document.getElementById("myTable");
+      var row = document.getElementById("row" + rowNum);
+      table.deleteRow(row.rowIndex);
+      numRows--;
+      // update serial numbers of remaining rows
+      for (var i = rowNum; i <= numRows; i++) {
+        var row = document.getElementById("row" + i);
+        row.cells[0].innerHTML = i;
+        // update input ids to match row number
+        row.cells[1].childNodes[0].id = "name" + i;
+        row.cells[2].childNodes[0].id = "email" + i;
+        row.cells[3].childNodes[0].id = "phone" + i;
+        row.cells[4].childNodes[0].setAttribute("onclick", "deleteRow(" + i + ")");
+      }
+    }
+
+    function saveData() {
+      var data = [];
+      for (var i = 1; i <= numRows; i++) {
+        var input33=document.getElementById("input33").value;
+                var input26=document.getElementById("input26").value;
+
+        var name = document.getElementById("name" + i).value;
+        var email = document.getElementById("email" + i).value;
+        var phone = document.getElementById("phone" + i).value;
+        var fname = document.getElementById("fname" + i).value;
+        var femail = document.getElementById("femail" + i).value;
+        var fphone = document.getElementById("fphone" + i).value;
+        data.push([input33,input26,i, name, email, phone,fname,femail,fphone]);
+      }
+      google.script.run.withSuccessHandler(function() {
+        alert("Data saved.");
+      }).saveData(data);
+    }
+  </script>
+</body>
+</html>
+

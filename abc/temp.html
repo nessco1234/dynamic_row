@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <title>Create</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            display: flex;
+            background-color: #232f3e;
+            box-shadow: 0px 1px 2px #232f3e;
+        }
+
+        h1 {
+            color: coral;
+            font-weight: bold;
+            background: transparent;
+            padding: 7px;
+        }
+
+        .outer-wrapper {
+            margin: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+            max-width: fit-content;
+            max-height: fit-content;
+        }
+
+        .table-wrapper {
+            overflow-y: scroll;
+            overflow-x: scroll;
+            height: fit-content;
+            max-height: 66.4vh;
+            margin-top: 22px;
+            margin: 15px;
+            padding-bottom: 20px;
+        }
+
+        table {
+            min-width: max-content;
+            border-collapse: separate;
+            border-spacing: 0px;
+        }
+
+        table th {
+            position: sticky;
+            top: 0px;
+            background-color: #133b5c;
+            color: rgb(241, 245, 179);
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            outline: 0.7px solid black;
+            border: 1.5px solid black;
+        }
+
+        table th,
+        table td {
+            padding: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        table td {
+            text-align: left;
+            font-size: 15px;
+            border: 1px solid rgb(177, 177, 177);
+            padding-left: 20px;
+
+        }
+    </style>
+    <style>
+        .btn-group-xs>.btn,
+        .btn-xs {
+            padding: .25rem .4rem;
+            font-size: .875rem;
+            line-height: .5;
+            border-radius: .2rem;
+        }
+
+        @media (max-width: 767px) {
+            .table-responsive {
+                overflow-x: auto;
+                display: block;
+            }
+
+            .btn-sm {
+                padding: .25rem .5rem;
+                font-size: .875rem;
+                line-height: 1.5;
+                border-radius: .2rem;
+            }
+        }
+    </style>
+    <style>
+        body {
+            background: #dfdd9a;
+        }
+
+        .frame {
+            box-shadow: 10px 10px 15px rgb(193, 182, 182), -6px -6px 15px #eee;
+            padding: 20px;
+            max-width: 480px;
+            margin: 40px auto;
+            margin-top: 10px;
+            border-radius: 7px;
+            background: white;
+        }
+
+        button {
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+            border-radius: 7px;
+        }
+
+        button:active {
+            transform: scale(0.95);
+            color: white
+        }
+
+        .btn.focus,
+        .btn:focus {
+            outline: 0;
+            box-shadow: none !important;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background-color: gold;
+            color: white;
+            border-color: gold;
+        }
+
+        .btn-info {
+            color: white;
+        }
+
+        .boxTitle {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 40px 40px 40px 40px;
+            padding: 1.5rem;
+            margin-left: 10px;
+            margin-right: 10px;
+            /* border-radius: 13px;         */
+            margin: auto;
+            width: 100%;
+        }
+
+        .box {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 13px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .inp {
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0px;
+            padding: 5px 10px;
+            outline: none;
+        }
+
+        [placeholder]:focus::-webkit-input-placeholder {
+            transition: text-indent 0.4s 0.4s ease;
+            text-indent: -100%;
+            opacity: 1;
+        }
+
+        .inp.focus,
+        .inp:focus {
+            outline: 0;
+            box-shadow: none !important;
+            /* color: green; */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand"
+            href="https://www.nesscoindia.com/china/paper-cup-making-machine-in-china/?gclid=CjwKCAiA85efBhBbEiwAD7oLQGRZ-17-v0CE5LbgZki5vQDE-cT-qiIfPEsificypRJB5QWdmmLuyxoCuWMQAvD_BwE">
+            <img src="https://www.nesscoindia.com/wp-content/uploads/2020/09/Nesscoindia-Logo.png" height="40px"
+                width="40px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">KYC Process <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">Company Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">xyz</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= ScriptApp.getService().getUrl();?>?page=Index">Edit and Search</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="needs-validation" novalidate>
+                    <div class="text-center md-4 boxTitle" style="color: white; background-color: #151616">
+                        <h5>CUSTOMER BASIC INFORMATION </h5>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>CUSTOMER CODE</label>
+                            <input type="text" class="form-control inp mb-3" id="input1"
+                                placeholder="What's your Customer Code?" onkeyup="myFun()" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>EMPLOYEE ID.</label>
+                            <input type="text" class="form-control inp mb-3" id="input2"
+                                placeholder="What's your Emp Id?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>CUSTOMER NAME</label>
+                            <input type="text" class="form-control inp mb-3" id="input3"
+                                placeholder="What's your Customer Name?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>EMAIL</label>
+                            <input type="email" class="form-control inp mb-3" id="input4"
+                                placeholder="What's your Email Id?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>STREET ADDRESS</label>
+                            <input type="text" class="form-control inp mb-3" id="input5"
+                                placeholder="What's your Street Address?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>CITY</label>
+                            <input type="text" class="form-control inp mb-3" id="input6" placeholder="What's your City?"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>STATE/ REGION/ PROVINCE </label>
+                            <input type="text" class="form-control inp mb-3" id="input7"
+                                placeholder="What's your State/Region/Province" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>
+                                POSTAL/ZIP CODE
+                            </label>
+                            <input type="text" class="form-control inp mb-3" id="input8"
+                                placeholder="What's your Postal/Zip Code?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>
+                                AADHAR CARD
+                            </label>
+                            <input type="text" class="form-control inp mb-3" id="input9"
+                                placeholder="What's your AADHAR CARD?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>PAN CARD </label>
+                            <input type="text" class="form-control inp mb-3" id="input10"
+                                placeholder="What's your PAN CARD?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>OTHER DOCUMENT</label>
+                            <input type="text" class="form-control inp mb-3" id="input11"
+                                placeholder="What's your Other Document's?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY CODE AND COMPANY NAME</label>
+                            <input type="text" class="form-control inp mb-3" id="input12"
+                                placeholder="Company Code Generated Automatically !!!" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="text-center mb-4 boxTitle" style="color: white; background-color: #151616">
+                        <h5>COMPANY BASIC INFORMATION</h5>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY TYPE</label>
+                            <input type="text" class="form-control inp mb-3" id="input13"
+                                placeholder="ENTER COMPANY TYPE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY NAME</label>
+                            <input type="text" class="form-control inp mb-3" id="input14"
+                                placeholder="ENTER COMPANY NAME" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>PRIMARY MOBILE NUMBER</label>
+                            <input type="text" class="form-control inp mb-3" id="input15"
+                                placeholder="ENTER PRIMARY MOBILE NUMBER?" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY EMAIL ID</label>
+                            <input type="email" class="form-control inp mb-3" id="input16"
+                                placeholder="ENTER COMPANY EMAIL ID" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY BILLING STREET ADDRESS</label>
+                            <input type="text" class="form-control inp mb-3" id="input17"
+                                placeholder="ENTER COMPANY BILLING STREET ADDRESS" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY BILLING CITY</label>
+                            <input type="text" class="form-control inp mb-3" id="input18"
+                                placeholder=" ENTER COMPANY BILLING CITY" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY BILLING STATE/ REGION/ PROVINCE</label>
+                            <input type="number" class="form-control inp mb-3" id="input19"
+                                placeholder="ENTER COMPANY BILLING STATE/ REGION/ PROVINCE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>COMPANY BILLING POSTAL/ ZIP CODE</label>
+                            <input type="number" class="form-control inp mb-3" id="input20"
+                                placeholder="ENTER COMPANY BILLING POSTAL/ ZIP CODE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>GST CERTIFICATE (Upload)</label>
+                            <input type="text" class="form-control inp mb-3" id="input21"
+                                placeholder="ENTER GST CERTIFICATE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>PAN CARD (Upload)</label>
+                            <input type="text" class="form-control inp mb-3" id="input22" placeholder="ENTER PAN CARD"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>AADHAR CARD (Upload)</label>
+                            <input type="text" class="form-control inp mb-3" id="input23"
+                                placeholder="ENTER AADHAR CARD" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>CIN CERTIFICATE(PVT LTD/LLP) (Upload)</label>
+                            <input type="text" class="form-control inp mb-3" id="input24"
+                                placeholder="ENTER CIN CERTIFICATE(PVT LTD/LLP)" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="text-center mb-4 boxTitle" style="color: white; background-color: #151616">
+                        <h5>TRANSPORTATION INFORMATION</h5>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect1">TRANSPORT FROM</label>
+                            <select class="form-control" id="input25" name="input25">
+                                <option>PARTY</option>
+                                <option>NESSCO</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>TRANSPORT TYPE</label>
+                            <input type="text" class="form-control inp mb-3" id="input26"
+                                placeholder="ENTER TRANSPORT TYPE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect2">DELIVERY FROM</label>
+                            <select class="form-control" id="input27" name="input27">
+                                <option>JAIPUR</option>
+                                <option>MUMBAI</option>
+                                <option>MUNDRA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect3">ADVANCE FRIEGHT CONFIRM TO CUSTOMER</label>
+                            <select class="form-control" id="input28" name="input28">
+                                <option>YES</option>
+                                <option>NO</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect4">FRIEGHT TERMS</label>
+                            <select class="form-control" id="input29" name="input29">
+                                <option>BY PARTY</option>
+                                <option>BY NESSCO</option>
+                                <option>BY BOTH</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>NESSCO FRIEGHT %</label>
+                            <input type="text" class="form-control inp mb-3" id="input30"
+                                placeholder="ENTER NESSCO FRIEGHT %" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="text-center mb-4 boxTitle" style="color: white; background-color: #151616">
+                        <h5>OPERATOR INFORMATION</h5>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label>REQUIRED AT THE TIME OF DELIVERY</label>
+                            <input type="text" class="form-control inp mb-3" id="input31"
+                                placeholder="ENTER REQUIRED AT THE TIME OF DELIVERY" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>REQUIRED BEFORE</label>
+                            <input type="text" class="form-control inp mb-3" id="input32"
+                                placeholder="ENTER REQUIRED BEFORE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect5">TRANSPORT FROM</label>
+                            <select class="form-control" id="input33" name="input33">
+                                <option>PRODUCTION</option>
+                                <option>REPAIR AND MAINTAINANCE</option>
+                                <option>HELPER</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>MIN EXPERIENCE(IN YEARS)</label>
+                            <input type="text" class="form-control inp mb-3" id="input34"
+                                placeholder="ENTER MIN EXPERIENCE(IN YEARS)" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect6">FOOD BY</label>
+                            <select class="form-control" id="input35" name="input35">
+                                <option>PARTY</option>
+                                <option>SELF</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>SHIFT TYPE</label>
+                            <input type="text" class="form-control inp mb-3" id="input36" placeholder="ENTER SHIFT TYPE"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>MACHINE FOR REPAIR AND MAINTAINANCE</label>
+                            <input type="text" class="form-control inp mb-3" id="input37"
+                                placeholder="ENTER HOW MANY MACHINE FOR REPAIR AND MAINTAINANCE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>MAX SALARY</label>
+                            <input type="text" class="form-control inp mb-3" id="input38" placeholder="ENTER MAX SALARY"
+                                autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect7">ACCOMODATION BY</label>
+                            <select class="form-control" id="input39" name="input39">
+                                <option>PARTY</option>
+                                <option>SELF</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>SHIFT WORKKING HRS</label>
+                            <input type="text" class="form-control inp mb-3" id="input40"
+                                placeholder="ENTER SHIFT WORKKING HRS" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="text-center mb-4 boxTitle" style="color: white; background-color: #151616">
+                        <h5>PAYMENT TYPE</h5>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect8">CUSTOMER MACHINE INTERACTION</label>
+                            <select class="form-control" id="input41" name="input41">
+                                <option>WANT TO SEE THE MACHINE</option>
+                                <option>WILL NOT SEE THE MACHINE</option>
+                                <option>WANTS VIDEO ONLY</option>
+                                <option>OTHER</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect9">PAYMENT TYPE</label>
+                            <select class="form-control" id="input42" name="input42">
+                                <option>PAYMENT READY IN HAND</option>
+                                <option>BANK LOAN</option>
+                                <option>PARTIAL READY, PARTIAL WILL BE ARRANGED FROM OTHER SOURCES.</option>
+                                <option>100% PAYMENT DONE</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label>BANK LOAN EXPECTED CLEAR DATE</label>
+                            <input type="text" class="form-control inp mb-3" id="input43"
+                                placeholder="ENTER PAYMENT TYPE" autocomplete="off">
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="exampleFormControlSelect10">CUSTOMER NEED SAMPLE OF FINISHED PRODUCT</label>
+                            <select class="form-control" id="input44" name="input44">
+                                <option>YES</option>
+                                <option>NO</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+                <div class="col-lg-12">
+                    <div class="text-center mb-4 boxTitle" style="color: white; background-color: #151616">
+                        <h5>ORDER DETAILS</h5>
+                    </div>
+                    <div class="form-row">
+                        <!-- <div class="text-center mb-2 boxTitle"> -->
+                        <!-- <div class="outer-wrapper"> -->
+                        <div class="table-wrapper">
+                            <table class="_table" id="_table">
+                                <thead>
+                                    <tr>
+                                        <th>ORDER#</th>
+                                        <th>PRODUCT CODE</th>
+                                        <th>PRODUCT NAME</th>
+                                        <th>MACHINE NAME</th>
+                                        <th>ITEM TYPE</th>
+                                        <th>MATERIAL NAME</th>
+                                        <th>QTY</th>
+                                        <th>QTY UOM</th>
+                                        <th>ADD ON 1</th>
+                                        <th>ADD ON 2</th>
+                                        <th>ADD ON 3</th>
+                                        <th>ADD ON 4</th>
+                                        <th>ADD ON 5</th>
+                                        <th>BLANK AGREEMENT TYPE</th>
+                                        <th>PAPER TYPE</th>
+                                        <th>GSM RANGE</th>
+                                        <th>REEL BOTTOM</th>
+                                        <th>READY BOTTOM</th>
+                                        <th>HEIGHT</th>
+                                        <th>KNURLING DEPTH</th>
+                                        <th>BATCH COUNT</th>
+                                        <th>TOTAL STACK LENGTH</th>
+                                        <th>CURLING DIA</th>
+                                        <th>TOP DIA</th>
+                                        <th>VOLUME</th>
+                                        <th>VOLUME(UoM)</th>
+                                        <th>CUSTOMER PAPER DRAWING (UPLOAD)</th>
+                                        <th>MACHINE STANDARD SPEED LIMIT (CUSTOMER REQUESTED)</th>
+                                        <th>PACKING TYPE</th>
+                                        <th>DELIVERY BY (WORKING DAYS)</th>
+                                        <th>CUSTOMER SIZE CONFIRMATION UPLOAD</th>
+                                        <th>REMARKS</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="row1">
+                                        <td>1</td>
+                                        <!-- 2nd -->
+
+
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="pcode1"
+                                                placeholder="ENTER PRODUCT CODE" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- PRODUCT NAME -->
+                                            <select class="form-control" id="pname1">
+                                                <option>Select Product Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Machine name -->
+                                            <select class="form-control" id="machinename1">
+                                                <option>Select Machine Name</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- Item Type Vary -->
+                                            <select class="form-control" id="itemtype1">
+                                                <option>Select Item type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="materialname1"
+                                                placeholder="MATERIAL NAME" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="qty1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Same -->
+                                            <select class="form-control" id="qtyuom1">
+                                                <option>PC</option>
+                                                <option>BOX</option>
+                                                <option>LTR</option>
+                                                <option>MM</option>
+                                                <option>MTR</option>
+                                                <option>KG</option>
+                                                <option>GM</option>
+                                                <option>ML</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- ADD on 1 vary -->
+                                            <select class="form-control" id="add1on1">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 2 Vary-->
+                                            <select class="form-control" id="add2on1">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 3 vary -->
+                                            <select class="form-control" id="add3on1">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 4 vary -->
+                                            <select class="form-control" id="add4on1">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- add on 5 vary -->
+                                            <select class="form-control" id="add5on1">
+                                                <option>Select the Element</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- blank agreement type same -->
+                                            <select class="form-control" id="batype1" >
+                                                <option>CUSTOMER PAPER ON OUR MACHINE.</option>
+                                                <option>CUSTOMER SIZE ON OUR MACHINE.</option>
+                                                <option>OUR SIZE ON OUR MACHINE.</option>
+                                                <option>CUSTOMER WILL MANAGE HIMSELF.</option>
+                                                <option>CUSTOMER IS NOT CLEAR YET.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- paper type vary -->
+                                            <select class="form-control" id="ptype1" >
+                                                <option>Select Paper Type</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- GSM range vary -->
+                                            <select class="form-control" id="gsm1">
+                                                <option>Select GSM Range </option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="reelbottom1"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="readybottom1"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="height1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="kdepth1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="bcount1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="number" class="form-control inp mb-2" id="tslength1"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="cdia1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="tdia1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="volume1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- Volume UoM same -->
+                                            <select class="form-control" id="volumeuom1" >
+                                                <option>ml</option>
+                                                <option>oz</option>
+                                                <option>ltr</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="cpdrawing1"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <!-- machine standard speed limit same -->
+                                            <select class="form-control" id="mssl1" >
+                                                <option>60</option>
+                                                <option>65</option>
+                                                <option>70</option>
+                                                <option>75</option>
+                                                <option>80</option>
+                                                <option>85</option>
+                                                <option>90</option>
+                                                <option>100</option>
+                                                <option>110</option>
+                                                <option>120</option>
+                                                <option>130</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <!-- packing type same -->
+                                            <select class="form-control" id="pactype1">
+                                                <option>NORMAL PACKING</option>
+                                                <option>WOODEN PALLETE PACKING</option>
+                                                <option>WOODEN PACKING</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="deliveryby1"
+                                                placeholder="" autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="cscu1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control inp mb-2" id="remark1" placeholder=""
+                                                autocomplete="off">
+                                        </td>
+                                        <td>
+                                            <div class="action_container">
+                                                <button class="danger" onclick="deleteRow(1)">
+                                                    <i class="fa fa-close"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col text-center mb-4">
+                        <button type="button" id="addRow" onclick="addRow()"
+                            class="btn btn-success btn-lg float-left">Add Row</button>
+
+                        <button type="button" id="saveData" class="btn btn-success btn-lg float-right"
+                            onclick="saveData()">Save Data</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var numRows = 1;
+        function addRow() {
+            numRows++;
+            var table = document.getElementById("_table");
+            var row = table.insertRow(-1);
+            row.id = "row" + numRows;
+            row.insertCell(0).innerHTML = numRows;
+            row.insertCell(1).innerHTML = "<input type='text' id='pcode " + numRows + "'>";
+            row.insertCell(2).innerHTML = "<select class='form-control' id='pname" + numRows + "' > <option>Select Product Name </option> </select>";
+            row.insertCell(3).innerHTML = "<select id='machinename" + numRows + "' > <option>Select Machine Name </option> </select>";
+            row.insertCell(4).innerHTML = "<select id='itemtype" + numRows + "'> <option>Select Item type</option> </select>";
+            row.insertCell(5).innerHTML = "<input type='text' class='form-control inp mb-2' id='materialname" + numRows + "'>";
+            row.insertCell(6).innerHTML = "<input type='text' class='form-control inp mb-2' id='qty" + numRows + "'>";
+            row.insertCell(7).innerHTML = "<select id='qtyuom" + numRows + "'><option>PC</option><option>BOX</option><option>LTR</option><option>MM</option><option>MTR</option><option>KG</option><option>GM</option><option>ML</option></select>";
+            row.insertCell(8).innerHTML = "<select id='add1on" + numRows + "'><option>Select the Element</option></select>";
+            row.insertCell(9).innerHTML = "<select id='add2on" + numRows + "'><option>Select the Element</option></select>";
+            row.insertCell(10).innerHTML = "<select id='add3on" + numRows + "'><option>Select the Element</option></select>";
+            row.insertCell(11).innerHTML = "<select id='add4on" + numRows + "'><option>Select the Element</option></select>";
+            row.insertCell(12).innerHTML = "<select id='add5on" + numRows + "'><option>Select the Element</option></select>";
+            row.insertCell(13).innerHTML = "<select id='batype" + numRows + "'> <option>CUSTOMER PAPER ON OUR MACHINE.</option><option>CUSTOMER SIZE ON OUR MACHINE.</option> <option>OUR SIZE ON OUR MACHINE.</option><option>CUSTOMER WILL MANAGE HIMSELF.</option> <option>CUSTOMER IS NOT CLEAR YET.</option></select>";
+            row.insertCell(14).innerHTML = "<select id='ptype" + numRows + "'><option>Select Paper Type </option></select>";
+            row.insertCell(15).innerHTML = "<select id='gsm" + numRows + "'><option>Select GSM Range </option></select>";
+            row.insertCell(16).innerHTML = "<input type='text' id='reelbottom" + numRows + "'>";
+            row.insertCell(17).innerHTML = "<input type='text' id='readybottom" + numRows + "'>";
+            row.insertCell(18).innerHTML = "<input type='text' id='height" + numRows + "'>";
+            row.insertCell(19).innerHTML = "<input type='text' id='kdepth" + numRows + "'>";
+            row.insertCell(20).innerHTML = "<input type='text' id='bcount" + numRows + "'>";
+            row.insertCell(21).innerHTML = "<input type='text' id='tslength" + numRows + "'>";
+            row.insertCell(22).innerHTML = "<input type='text' id='cdia" + numRows + "'>";
+            row.insertCell(23).innerHTML = "<input type='text' id='tdia" + numRows + "'>";
+            row.insertCell(24).innerHTML = "<input type='text' id='volume" + numRows + "'>";
+            row.insertCell(25).innerHTML = "<select id='volumeuom" + numRows + "'><option>ml</option><option>oz</option><option>ltr</option> </select>";
+            row.insertCell(26).innerHTML = "<input type='text' class='form-control inp mb-2' id='cpdrawing" + numRows + "' placeholder='' autocomplete='off'>";
+            row.insertCell(27).innerHTML = "<select id='mssl" + numRows + "'><option>60</option><option>65</option><option>70</option><option>75</option><option>80</option><option>85</option><option>90</option><option>100</option><option>110</option><option>120</option><option>130</option></select>";
+            row.insertCell(28).innerHTML = "<select id='pactype" + numRows + "'><option>NORMAL PACKING</option><option>WOODEN PALLETE PACKING</option><option>WOODEN PACKING</option></select>";
+            row.insertCell(29).innerHTML = "<input type='text' id='deliveryby" + numRows + "'>";
+            row.insertCell(30).innerHTML = "<input type='text' id='cscu" + numRows + "'>";
+            row.insertCell(31).innerHTML = "<input type='text' id='remark" + numRows + "'>";
+            row.insertCell(32).innerHTML = "<button onclick='deleteRow(" + numRows + ")'>cancel</button>";
+        }
+
+        function cancelRow(button) {
+            var row = button.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+            numRows--;
+        }
+
+        function saveData() {
+
+            var data = [];
+            for (var i = 1; i <= numRows; i++) {
+                var input1 = document.getElementById("input1").value;
+                var input2 = document.getElementById("input2").value;
+                var input3 = document.getElementById("input3").value;
+                var input4 = document.getElementById("input4").value;
+                var input5 = document.getElementById("input5").value;
+                var input6 = document.getElementById("input6").value;
+                var input7 = document.getElementById("input7").value;
+                var input8 = document.getElementById("input8").value;
+                var input9 = document.getElementById("input9").value;
+                var input10 = document.getElementById("input10").value;
+                var input11 = document.getElementById("input11").value;
+                var input12 = document.getElementById("input12").value;
+                var input13 = document.getElementById("input13").value;
+                var input14 = document.getElementById("input14").value;
+                var input15 = document.getElementById("input15").value;
+                var input16 = document.getElementById("input16").value;
+                var input17 = document.getElementById("input17").value;
+                var input18 = document.getElementById("input18").value;
+                var input19 = document.getElementById("input19").value;
+                var input20 = document.getElementById("input20").value;
+                var input21 = document.getElementById("input21").value;
+                var input22 = document.getElementById("input22").value;
+                var input23 = document.getElementById("input23").value;
+                var input24 = document.getElementById("input24").value;
+                var input25 = document.getElementById("input25").value;
+                var input26 = document.getElementById("input26").value;
+                var input27 = document.getElementById("input27").value;
+                var input28 = document.getElementById("input28").value;
+                var input29 = document.getElementById("input29").value;
+                var input30 = document.getElementById("input30").value;
+                var input31 = document.getElementById("input31").value;
+                var input32 = document.getElementById("input32").value;
+                var input33 = document.getElementById("input33").value;
+                var input34 = document.getElementById("input34").value;
+                var input35 = document.getElementById("input35").value;
+                var input36 = document.getElementById("input36").value;
+                var input37 = document.getElementById("input37").value;
+                var input38 = document.getElementById("input38").value;
+                var input39 = document.getElementById("input39").value;
+                var input40 = document.getElementById("input40").value;
+                var input41 = document.getElementById("input41").value;
+                var input42 = document.getElementById("input42").value;
+                var input43 = document.getElementById("input43").value;
+                var pcode = document.getElementById("pcode" + i).value;
+                var pname = document.getElementById("pname" + i).value;
+                var machinename = document.getElementById("machinename" + i).value;
+                var itemtype = document.getElementById("itemtype" + i).value;
+                var materialname = document.getElementById("materialname" + i).value;
+                var qty = document.getElementById("qty" + i).value;
+                var qtyuom = document.getElementById("qtyuom" + i).value;
+                var add1on = document.getElementById("add1on" + i).value;
+                var add2on = document.getElementById("add2on" + i).value;
+                var add3on = document.getElementById("add3on" + i).value;
+                var add4on = document.getElementById("add4on" + i).value;
+                var add5on = document.getElementById("add5on" + i).value;
+                var batype = document.getElementById("batype" + i).value;
+                var ptype = document.getElementById("ptype" + i).value;
+                var gsm = document.getElementById("gsm" + i).value;
+                var reelbottom = document.getElementById("reelbottom" + i).value;
+                var readybottom = document.getElementById("readybottom" + i).value;
+                var height = document.getElementById("height" + i).value;
+                var kdepth = document.getElementById("kdepth" + i).value;
+                var bcount = document.getElementById("bcount" + i).value;
+                var tslength = document.getElementById("tslength" + i).value;
+                var cdia = document.getElementById("cdia" + i).value;
+                var tdia = document.getElementById("tdia" + i).value;
+                var volume = document.getElementById("volume" + i).value;
+                var volumeuom = document.getElementById("volumeuom" + i).value;
+                var cpdrawing = document.getElementById("cpdrawing" + i).value;
+                var mssl = document.getElementById("mssl" + i).value;
+                var pactype = document.getElementById("pactype" + i).value;
+                var deliveryby = document.getElementById("deliveryby" + i).value;
+                var cscu = document.getElementById("cscu" + i).value;
+                var remark = document.getElementById("remark" + i).value;
+                data.push([input1, input2, input3, input4, input5, input6, input7, input8, input9, input10, input11, input12, input13, input14, input15, input16, input17, input18, input19, input20, input21, input22, input23, input24, input25, input26, input27, input28, input29, input30, input31, input32, input33, input34, input35, input36, input37, input38, input39, input40, input41, input42, input43, i, pcode, pname, machinename, itemtype, materialname, qty, qtyuom, add1on, add2on, add3on, add4on, add5on, batype, ptype, gsm, reelbottom, readybottom, height, kdepth, bcount, tslength, cdia, tdia, volume, volumeuom, cpdrawing, mssl, pactype, deliveryby, cscu, remark]);
+            }
+            google.script.run.withSuccessHandler(function () {
+                alert("Data saved.");
+            }).saveData(data);
+        }
+    </script>
+</body>
+
+</html>
